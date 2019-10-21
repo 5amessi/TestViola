@@ -1,7 +1,7 @@
 import numpy as np
-import src.adaboost as ab
-import src.haar_features as haar
-import src.utils as utils
+import adaboost as ab
+import haar_features as haar
+import utils as utils
 
 # for processing time
 import progressbar
