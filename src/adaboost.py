@@ -2,10 +2,10 @@ from functools import partial
 import numpy as np
 import os
 
-from src.integral_image import IntegralImage as integral
-from src.haar_features import HaarLikeFeature as haar
-from src.haar_features import featureType
-from src.utils import *
+from integral_image import IntegralImage as integral
+from haar_features import HaarLikeFeature as haar
+from haar_features import featureType
+from utils import *
 
 
 # for processing time
