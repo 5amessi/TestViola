@@ -2,8 +2,8 @@ import os
 import json
 import numpy as np
 from PIL import Image
-from src.haar_features import featureType
-from src.haar_features import HaarLikeFeature as haar
+from haar_features import featureType
+from haar_features import HaarLikeFeature as haar
 from functools import partial
 
 
