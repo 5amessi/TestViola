@@ -1,5 +1,5 @@
-from src.integral_image import IntegralImage as integral
-from src.integral_image import get_sum
+from integral_image import IntegralImage as integral
+from integral_image import get_sum
 from enum import Enum
 
 
