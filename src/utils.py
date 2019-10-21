@@ -7,8 +7,10 @@ from haar_features import HaarLikeFeature as haar
 from functools import partial
 
 
-path_data_face = './train_images/FACES'
-path_data_no_face = './train_images/NFACES'
+# path_data_face = './train_images/FACES'
+# path_data_no_face = './train_images/NFACES'
+path_data_face = "/content/face-detection-data/pos"
+path_data_no_face = "/content/face-detection-data/neg"
 path_json_file = './data/haarClassifiers.json'
 path_json_feat = './data/allFeatures.json'
 path_cascade = ['./data/cascade_1.json', './data/cascade_2.json', './data/cascade_3.json']
@@ -23,6 +25,7 @@ SIZE = (24, 24) # resize the image
 
 
 def load_images(face):
+    
     # para face: whether a pos sample or a neg sample (boolean)
     # type face: True or False
     # return para: list of loaded images
@@ -30,7 +33,7 @@ def load_images(face):
     path = path_data_face if face else path_data_no_face
     images = list()
     # all files in the directory
-    for _file in os.listdir(path):
+    for _file in os.listdir(p):
         # not a directory
         if not os.path.isdir(_file):
             # is a bmp image file
