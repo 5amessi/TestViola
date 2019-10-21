@@ -33,7 +33,7 @@ def load_images(face):
     path = path_data_face if face else path_data_no_face
     images = list()
     # all files in the directory
-    for _file in os.listdir(p):
+    for _file in os.listdir(path):
         # not a directory
         if not os.path.isdir(_file):
             # is a bmp image file
